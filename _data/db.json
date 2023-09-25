@@ -1,0 +1,18 @@
+{
+  "tickets": [
+    {
+      "title": "Sample",
+      "body": "My new sample ticket",
+      "priority": "low",
+      "user_email": "mario@netninja.dev",
+      "id": "IFR9_fC"
+    },
+    {
+      "title": "Pulumi IAC ",
+      "body": "Not able to create GCP cluster using pulumi with node js on mac os.",
+      "priority": "high",
+      "user_email": "gaikwadamolraj@gmail.com",
+      "id": "ycqcPmt"
+    }
+  ]
+}

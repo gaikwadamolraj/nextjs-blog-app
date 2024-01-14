@@ -21,13 +21,15 @@ export default function CreateForm() {
       priority,
       user_email: "gaikwadamolraj@gmail.com",
     };
-    const res = await createTicket({ payload });
-    if (res.status === 201) {
-      route.refresh();
-      route.push("/tickets");
-    } else {
-      setErrorMessage(res.error);
-    }
+    route.refresh();
+    route.push("/tickets");
+    // const res = await createTicket({ payload });
+    // if (res.status === 201) {
+    //   route.refresh();
+    //   route.push("/tickets");
+    // } else {
+    //   setErrorMessage(res.error);
+    // }
   };
 
   return (

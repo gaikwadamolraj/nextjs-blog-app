@@ -1,17 +1,17 @@
 import { getTicketById } from "@/app/services/TicketService";
 import React from "react";
 
-export const dynamicParams = false; // default val = true
+// export const dynamicParams = false; // default val = true
 
-export async function generateStaticParams() {
-  const res = await fetch("http://localhost:4000/tickets");
+// export async function generateStaticParams() {
+//   const res = await fetch("http://localhost:4000/tickets");
 
-  const tickets = await res.json();
+//   const tickets = await res.json();
 
-  return tickets.map((ticket) => ({
-    id: ticket.id,
-  }));
-}
+//   return tickets.map((ticket) => ({
+//     id: ticket.id,
+//   }));
+// }
 
 export default async function Ticket({ params }) {
   const ticket = await getTicketById(params.id);
